@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    color: $main-front-color;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    color: $small-front-color;
+  }
+}
+
+.header-nav {
+  .btn-nav {
+    padding: 0.5rem 3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 2px 5px $shadow-box-color;
+  }
+  a {
+    font-family: "Poppins", sans-serif;
+    color: $main-front-color;
+    text-decoration: none;
+  }
+}
+
+.header-text {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  P {
+    color: $main-front-color;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $background-heading;
+    padding: 1rem 3rem;
+    background-color: $background-buttom;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+
+    &:hover {
+      opacity: 90%;
+    }
+  }
+}
+
+.last-content {
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $background-heading;
+    padding: 1.5rem 6rem;
+    background-color: $background-buttom;
+    border-radius: 5rem;
+    box-shadow: 0 3px 5px $shadow-box-color;
+    font-family: "Poppins", sans-serif;
+
+    &:hover {
+      opacity: 90%;
+    }
+  }
+}
+
+.footer-container {
+  font-size: 14px;
+  .footer-logo {
+    margin-top: 1rem;
+    .footer-l {
+      width: 10rem;
+      filter: brightness(0) invert(1);
+    }
+  }
+  p {
+    color: $background-heading;
+  }
+  a {
+    text-decoration: none;
+    color: $background-heading;
+    font-family: "Open Sans", sans-serif;
+  }
+  li {
+    list-style: none;
+    color: $background-heading;
+  }
+
+  .footer-about {
+    a:hover {
+      border-bottom: solid 1px $background-heading;
+    }
+  }
+
+  .ion-social-facebook,
+  .ion-social-twitter,
+  .ion-social-instagram {
+    transition: color 0.2s;
+    font-size: 160%;
+  }
+
+  .ion-social-facebook:hover {
+    color: $facebook-color;
+  }
+  .ion-social-twitter:hover {
+    color: $twitter-color;
+  }
+  .ion-social-instagram:hover {
+    color: $instagram-color;
+  }
+}

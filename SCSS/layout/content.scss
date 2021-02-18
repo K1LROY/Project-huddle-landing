@@ -1,0 +1,125 @@
+.middle-container {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+  margin-bottom: 10rem;
+
+  .middle-container-grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content1"
+      "content2"
+      "content3";
+    grid-gap: 3rem;
+    justify-content: center;
+
+    .middle-content-1 {
+      width: 100%;
+      grid-area: content1;
+      padding: 1rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 50% 50%);
+      grid-gap: 3rem;
+      box-shadow: 0 2px 5px $shadow-box-color;
+      border-radius: 1rem;
+
+      .content-1-text {
+        padding: 5rem;
+        align-self: center;
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+      img {
+        justify-self: center;
+        width: 80%;
+        padding: 2rem 1rem;
+      }
+    }
+
+    .middle-content-2 {
+      width: 100%;
+      grid-area: content2;
+      padding: 1rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 50% 50%);
+      grid-gap: 3rem;
+      box-shadow: 0 2px 5px $shadow-box-color;
+      border-radius: 1rem;
+
+      .content-2-text {
+        padding: 5rem;
+        align-self: center;
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+      img {
+        justify-self: center;
+        width: 80%;
+        padding: 2rem 1rem;
+      }
+    }
+
+    .middle-content-3 {
+      width: 100%;
+      grid-area: content3;
+      padding: 1rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 50% 50%);
+      grid-gap: 3rem;
+      box-shadow: 0 2px 5px $shadow-box-color;
+      border-radius: 1rem;
+
+      .content-3-text {
+        padding: 5rem;
+        align-self: center;
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+      img {
+        justify-self: center;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .middle-container {
+    .middle-container-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "content1"
+        "content2"
+        "content3";
+      text-align: center;
+
+      .middle-content-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .middle-content-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .middle-content-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

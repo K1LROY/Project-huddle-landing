@@ -1,0 +1,122 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 8rem 5rem 5rem 8rem;
+  margin-top: 20rem;
+  position: relative;
+  background-color: $main-front-color;
+
+  .footer-container-grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "logo logo logo"
+      "address about social";
+    grid-gap: 2rem;
+
+    .footer-logo {
+      grid-area: logo;
+    }
+    .footer-address {
+      grid-area: address;
+      img {
+        margin-right: 1.5rem;
+      }
+
+      .location {
+        display: flex;
+        margin-bottom: 1.5rem;
+        img {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+      .phone {
+        display: flex;
+        margin-bottom: 1.5rem;
+      }
+      .email {
+        display: flex;
+      }
+    }
+    .footer-about {
+      grid-area: about;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "about-us career";
+      text-align: left;
+
+      .about-us {
+        grid-area: about-us;
+
+        li {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .career {
+        grid-area: career;
+
+        li {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    .footer-social {
+      grid-area: social;
+    }
+  }
+}
+
+.coded {
+  display: flex;
+  color: $main-front-color;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer-container {
+    padding: 10rem 3rem 5rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    .footer-container-grid {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "logo"
+        "address"
+        "about"
+        "social";
+      grid-gap: 2rem;
+
+      .footer-about {
+        grid-area: about;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "about-us"
+          "career";
+        text-align: left;
+      }
+      .footer-social {
+        grid-area: social;
+        text-align: center;
+      }
+    }
+  }
+  .coded {
+    font-size: 10px;
+  }
+}
